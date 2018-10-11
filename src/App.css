@@ -1,3 +1,41 @@
+@media (max-width: 750px), (max-height: 450px) {
+
+  .primes {
+    display:inline-flex !important;
+    padding:10px !important;
+  }
+}
+
+@media only screen
+		and (max-device-width : 405px)
+		and (max-device-height : 812px)
+		and (-webkit-min-device-pixel-ratio: 3)
+		and (orientation : portrait) {
+
+      body, html {
+        overflow: scroll !important;
+      }
+
+      .primes {
+        display:inline-flex !important;
+        padding:10px !important;
+      }
+
+}
+
+@media only screen
+		and (max-device-width : 405px)
+		and (max-device-height : 812px)
+		and (-webkit-min-device-pixel-ratio: 3)
+		and (orientation : landscape) {
+
+      body, html {
+        overflow: visible !important;
+      }
+
+}
+
+
 
 body, html {
 	margin: 0;
@@ -25,6 +63,11 @@ h3 {
   margin: 1.5rem 0 .25em;
 
 
+}
+
+.primes {
+  display:inline;
+  padding:15px;
 }
 .parent {
   padding-right: 25rem;

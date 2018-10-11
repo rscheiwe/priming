@@ -112,7 +112,7 @@ class App extends Component {
           <div style={{padding:'5%'}}>
             <center><h2>{ this.state.answer !== 'true'
                     ? this.state.answer.map(el => (
-                        <h2 style={{display:'inline', padding:'15px'}}>{ el }</h2>
+                        <h2 className='primes'>{ el }</h2>
                       ))
                       :
                       this.state.answer.toUpperCase()}</h2></center>
