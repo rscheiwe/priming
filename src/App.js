@@ -43,7 +43,7 @@ class App extends Component {
 
   handleRandom = (e) => {
     let min = 1000
-    let max = 100000
+    let max = 10000000
     this.setState({
       change:(Math.floor(Math.random() * (max - min + 1)) + min).toString()
     }, () => this.handleInt(e))
@@ -108,6 +108,7 @@ class App extends Component {
           <form onSubmit={this.handleSubmit} className='text-center'>
             <Input label="Enter Your Number & Hit 'Enter'" value={this.state.change} onChange={this.handleChange}/>
           </form>
+          <small><p className='text-center' style={{fontFamily:'Orbitron'}}>If prime, it'll say 'true'. If not prime, it'll print out the prime factors.</p></small>
           <div style={{padding:'5%'}}>
             <center><h2>{ this.state.answer !== 'true'
                     ? this.state.answer.map(el => (
